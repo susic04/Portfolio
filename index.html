@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Ivan Susic - Portfolio</title>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="logo">IS</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#" class="about-link">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#" class="contact-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1 class="fade-in">IVAN SUSIC</h1>
+    <p class="fade-in" style="animation-delay: 0.2s;">Backend Python Developer</p>
+    <div class="cta-buttons fade-in" style="animation-delay: 0.4s;">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#" class="btn btn-secondary contact-link">Get In Touch</a>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section (Overlay) -->
+  <section class="about-section" id="about">
+    <span class="close-btn" id="closeAbout">&times;</span>
+    <div class="about-content">
+      <h2 class="section-title">About Me</h2>
+      <p>Hi! My name is Ivan Susic, and I'm currently a second-year university student with a strong passion for programming and building my own applications. So far, I've completed two projects: this portfolio website and a game I developed using Python and the Pygame library. I'm genuinely fascinated by programming, creating software from scratch, and solving challenging problems. Lately, I've been especially interested in machine learning and AI, exploring how intelligent systems can learn, adapt, and improve. In my free time, I enjoy experimenting with new technologies, learning frameworks, and constantly improving my skills to bring innovative ideas to life. I'm excited to continue developing my knowledge, building projects that combine creativity and functionality, and exploring opportunities to contribute to real-world applications.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="slike/pygame_3.png" alt="Snake Game" class="project-image" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+        <div class="project-info">
+          <h3>SNAKE PYGAME</h3>
+          <p>Classic snake game built with Python and Pygame library, featuring smooth gameplay and retro graphics.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pygame</span>
+            <span class="tag">Game Dev</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="slike/projekt_2.png" alt="Portfolio Website" class="project-image" onerror="this.style.background='linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'">
+        <div class="project-info">
+          <h3>PORTFOLIO WEBSITE</h3>
+          <p>Modern, responsive portfolio website showcasing projects with sleek animations and interactive design.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Overlay) -->
+  <section class="contact-section" id="contact">
+    <span class="close-btn" id="closeContact">&times;</span>
+    <div class="contact-content">
+      <h2>Let's Connect</h2>
+      <div class="social-links">
+        <a href="https://github.com/susic04" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:ivansusic6@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://instagram.com/susic04_" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
