@@ -43,7 +43,7 @@ body {
     radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
-  animation: bgMove 20s ease-in-out infinite;
+  animation: bgMove 5s ease-in-out infinite;
 }
 
 @keyframes bgMove {
@@ -252,11 +252,10 @@ nav.scrolled {
   height: 100%;
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
-  z-index: 999;
+  z-index: 2000; /* 🔼 povecaj sloj da bude iznad svega */
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 1; /* privremeno za test */
 }
 
 .about-section.active {
@@ -281,13 +280,14 @@ nav.scrolled {
 }
 
 .close-btn {
-  position: absolute;
+  position: fixed; /* 🔼 fiksiraj da ne zavisi od .about-content */
   top: 30px;
   right: 30px;
   font-size: 40px;
-  color: var(--primary);
+  color: #00ffff; /* direktno umjesto varijable, da testiraš */
   cursor: pointer;
-  transition: transform 0.3s ease;
+  z-index: 3000; /* 🔼 iznad svih drugih elemenata */
+  background: none;
 }
 
 .close-btn:hover {
@@ -425,7 +425,7 @@ nav.scrolled {
   height: 100%;
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
-  z-index: 999;
+  z-index:2000;
   justify-content: center;
   align-items: center;
   opacity: 0;
