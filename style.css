@@ -886,7 +886,18 @@ nav.scrolled {
   .footer-links {
     order: 1;
   }
- 
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+  }
 
   .nav-links.active {
     right: 0;
