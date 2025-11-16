@@ -474,7 +474,7 @@ nav.scrolled {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-logo {
@@ -485,7 +485,6 @@ nav.scrolled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 20px;
   animation: textPulse 3s ease-in-out infinite;
 }
 
@@ -570,6 +569,7 @@ nav.scrolled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -820,10 +820,12 @@ nav.scrolled {
   .footer-left {
     text-align: center;
     align-items: center;
+
   }
 
   .footer-logo {
     font-size: 40px !important;
+    margin-bottom: 0;
   }
 
   .footer-description {
