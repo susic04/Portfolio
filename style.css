@@ -463,7 +463,8 @@ nav.scrolled {
 .footer-container {
   max-width: 1400px;
   margin: 0 auto;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   position: relative;
@@ -477,16 +478,7 @@ nav.scrolled {
   gap: 20px;
 }
 
-.footer-logo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(36px, 6vw, 72px);
-  font-weight: 900;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: textPulse 3s ease-in-out infinite;
-}
+
 
 @keyframes textPulse {
   0%, 100% { filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5)); }
